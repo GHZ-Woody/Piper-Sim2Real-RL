@@ -10,7 +10,15 @@
   <img src="./docs/demo.gif" width="70%" alt="Piper Robot Tracking Demo" />
 </p>
 
+### 2. 训练收敛曲线 (TensorBoard)
+<p align="center">
+  <img src="./docs/reward_curve.png" width="75%" alt="Training Reward Curve" />
+</p>
+<p align="center">
+  <em>注：得益于显式计数器打桩与重构后的稠密奖励函数（Dense Reward），模型的 ep_rew_mean 在训练中后期展现出极其平稳的收敛态势，未发生强化学习中常见的策略崩溃（Policy Collapse）。</em>
+</p>
 ---
+
 ## 项目核心亮点与技术演进
 
 ### 1. 架构打桩：解决多进程向量环境的日志拦截 Bug
