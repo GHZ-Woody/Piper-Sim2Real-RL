@@ -3,7 +3,14 @@
 本项目基于 **MuJoCo** 物理引擎与 **Stable-Baselines3 (SB3)** 强化学习框架，实现了 AgileX Piper 6自由度机械臂端到端（End-to-End）的空间目标追踪控制。项目重点攻克了仿真到真实世界迁移（Sim-to-Real）中的电机扰动难题，通过引入领域随机化（Domain Randomization）技术，使策略网络具备极强的鲁棒性。
 
 ---
+## 效果演示与训练表现
 
+### 1. 6-DOF 空间目标追踪表现 (Simulation Demo)
+<p align="center">
+  <img src="./docs/demo.gif" width="70%" alt="Piper Robot Tracking Demo" />
+</p>
+
+---
 ## 项目核心亮点与技术演进
 
 ### 1. 架构打桩：解决多进程向量环境的日志拦截 Bug
