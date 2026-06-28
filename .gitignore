@@ -10,6 +10,8 @@ __pycache__/
 *tensorboard/
 *.runs/
 wandb/
+# 拦截你本地产生的这个特定 TensorBoard 缩写文件夹
+ppo_piper_tb/
 
 # 2. 忽略训练出来的满级大脑（模型权重与大文件）
 *.pth
