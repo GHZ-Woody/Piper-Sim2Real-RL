@@ -1,4 +1,11 @@
-gymnasium>=0.26.0
-mujoco>=3.0.0
+# 核心深度学习与强化学习框架
+torch>=2.0.0
+numpy>=1.22.0
 stable-baselines3[extra]>=2.0.0
-numpy>=1.21.0
+
+# 仿真环境与监控
+gymnasium>=0.28.1
+mujoco>=2.3.0
+
+# 辅助工具（我们刚刚引入的 YAML 解析器）
+pyyaml>=6.0

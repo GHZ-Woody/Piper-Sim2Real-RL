@@ -1,0 +1,18 @@
+# 环境与路径配置
+env:
+  xml_filename: "scene.xml"            # MuJoCo 模型文件名
+  render_mode_eval: "human"            # 评估时的渲染模式
+
+# 训练超参数（对应被注释掉的训练部分）
+train:
+  total_timesteps: 501760              # 总训练步数
+  tensorboard_log: "./ppo_piper_tensorboard/"  # 日志路径
+  model_save_name: "ppo_piper_real_task"       # 模型保存名称
+  policy_type: "MlpPolicy"             # 策略网络类型
+
+# 评估与验证配置
+eval:
+  model_load_name: "ppo_piper_real_task"       # 评估时加载的模型名称
+  eval_steps: 1500                     # 验证循环的步数
+  sleep_time: 0.01                     # 渲染每步的延迟（秒）
+  deterministic: false                 # 是否使用确定性策略
